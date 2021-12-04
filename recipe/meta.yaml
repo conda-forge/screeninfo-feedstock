@@ -1,5 +1,5 @@
 {% set name = "screeninfo" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/screeninfo-{{ version }}.tar.gz
-  sha256: 12a97c3527e3544ac5dbd7c1204283e2653d655cbd15844c990a83b1b13ef500
+  sha256: 9501bf8b8458c7d1be4cb0ac9abddddfa80b932fb3f65bfcb54f5586434b1dc5
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
